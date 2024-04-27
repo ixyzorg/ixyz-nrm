@@ -8,7 +8,7 @@ npm install -g ixyz-nrm
 
 ## 使用方法
 
-ixyz-tool <command> [options]
+nrm <command> [options]
 
 
 ## 命令
