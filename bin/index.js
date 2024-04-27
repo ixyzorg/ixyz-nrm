@@ -9,7 +9,7 @@ import { input, select, checkbox } from '@inquirer/prompts';
 import { addRegistry, delRegistry } from '../utils/handleRegistry.js'
 
 const program = new Command();
-program.name('ixyz-tool')
+program.name('ixyz-nrm')
   .usage('<command> [options]')
   .description(chalk.green(`www.ixyz.org`))
   .version(`v${version}`, '-version, --version', '显示版本号')
@@ -40,6 +40,10 @@ program.command('add')
       console.log(chalk.red.bold('输入不能为空'));
       return
     }
+    if(!registryValue.startsWith('http://')&&!registryValue.startsWith('https://')){
+      console.log(chalk.red.bold('镜像源地址必须以http://开头或者https://'));
+      return
+    }
     addRegistry(registryName.trim(), registryValue.trim())
     console.log(chalk.green.bold(`添加成功`));
   });
@@ -48,9 +52,9 @@ program.command('del')
   .description('删除镜像源')
   .action(async (name, options) => {
     const answer = await checkbox({
-      message:'选择即将要删除的镜像',
+      message: '选择即将要删除的镜像',
       choices: data,
-      theme:{
+      theme: {
         helpMode: 'always'
       }
     });

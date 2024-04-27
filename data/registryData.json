@@ -1,1 +1,20 @@
-{"npm":{"registry":"https://registry.npmjs.org/"},"yarn":{"registry":"https://registry.yarnpkg.com/"},"tencent":{"registry":"https://mirrors.cloud.tencent.com/npm/"},"cnpm":{"registry":"https://r.cnpmjs.org/"},"taobao":{"registry":"https://registry.npmmirror.com/"},"npmMirror":{"registry":"https://skimdb.npmjs.com/registry/"}}
+{
+  "npm": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "yarn": {
+    "registry": "https://registry.yarnpkg.com/"
+  },
+  "tencent": {
+    "registry": "https://mirrors.cloud.tencent.com/npm/"
+  },
+  "cnpm": {
+    "registry": "https://r.cnpmjs.org/"
+  },
+  "taobao": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "npmMirror": {
+    "registry": "https://skimdb.npmjs.com/registry/"
+  }
+}
