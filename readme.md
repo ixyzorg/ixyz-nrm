@@ -1,10 +1,10 @@
-# ixyz-tool 使用说明
+# ixyz-nrm 使用说明
 
-欢迎使用 ixyz-tool，一个用于管理镜像源的工具。
+欢迎使用 ixyz-nrm，一个用于管理镜像源的工具。
 
 ## 安装
 
-npm install -g ixyz-tool
+npm install -g ixyz-nrm
 
 ## 使用方法
 
