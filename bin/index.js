@@ -9,7 +9,7 @@ import { input, select, checkbox } from '@inquirer/prompts';
 import { addRegistry, delRegistry } from '../utils/handleRegistry.js'
 
 const program = new Command();
-program.name('ixyz-nrm')
+program.name('nrm')
   .usage('<command> [options]')
   .description(chalk.green(`www.ixyz.org`))
   .version(`v${version}`, '-version, --version', '显示版本号')
@@ -40,7 +40,7 @@ program.command('add')
       console.log(chalk.red.bold('输入不能为空'));
       return
     }
-    if(!registryValue.startsWith('http://')&&!registryValue.startsWith('https://')){
+    if (!registryValue.startsWith('http://') && !registryValue.startsWith('https://')) {
       console.log(chalk.red.bold('镜像源地址必须以http://开头或者https://'));
       return
     }
